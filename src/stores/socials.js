@@ -9,7 +9,7 @@ export const socials = writable([
     {
         title: 'Github',
         imageUrl: '/images/gh_logo.png',
-        Url: 'https://www.instagram.com/_ilieff_e/',
+        Url: 'https://github.com/whiteewolf',
     },
     {
         title: 'Discord Server',
