@@ -1,6 +1,4 @@
 <script>
-    import { user } from "../stores/auth";
-    import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, signInWithPopup } from 'firebase/auth';
     import { auth } from "../firebase";
     import { goto } from "$app/navigation"
 
@@ -13,50 +11,54 @@
       }
     }
 </script>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+<nav class="navbar">
+        <img src="/images/me.png" alt="Emil Ilieff" class="nav-image">
+        <div class="brand-name">Emil Ilieff</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+        <a href="/socials">Socials</a>
+        <a href="/techs">Technologies</a>
+    </div>
 </nav>
 
 <style>
-    nav {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        background-color: #333; /* Adjust as needed */
-        padding: 10px 0;
-        z-index:1000; /* Ensure it's above other content */
-    }
-    /* button {
-        margin: 10px 0;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #4e73df;
-      color: white;
-      cursor: pointer;
-      font-size: 1rem;
-      width: 100%;
-      max-width: 150px;
-      transition: background-color 0.3s ease;
-    } */
-    /* button:hover {
-        background-color:#3a57c4;
-    } */
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+     .navbar {
         display: flex;
-        justify-content: center; /* Center the items horizontally */
+        align-items: center;
+        padding: 20px;
+        background-color: #464646; /* Dark background */
+        color: #e0e0e0; /* Light text color */
+    }
+    .navbar .nav-image {
+        border-radius: 80%;
+    }
+    .navbar img {
+        height: 40px;
+        margin-right: 10px;
     }
 
-    li {
-        margin: 0 15px;
+    .navbar .brand-name {
+        font-size: 1.5rem;
+        color: #66c0ff; /* Futuristic blue */
+    }
+
+    .navbar .nav-links {
+        margin-left: 50px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .navbar a {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navbar a:hover {
+        color: #66c0ff;
     }
 
     a {

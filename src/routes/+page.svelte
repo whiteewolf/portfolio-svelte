@@ -9,6 +9,7 @@
 
 <style>
     main {
+        padding: 50px;
         flex-direction: column;
         justify-content:left;
         align-items: center;
@@ -20,19 +21,19 @@
         font-size: 3rem;
         color: #fff;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        animation: fadeInUp 1s ease;
+        animation: fadeInUp 2s ease;
     }
 
     p {
         font-size: 1.2rem;
         color: #ccc;
-        animation: fadeInUp 1.5s ease;
+        animation: fadeInUp 2.5s ease;
     }
 
     @keyframes fadeInUp {
         from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(100px);
         }
         to {
             opacity: 1;

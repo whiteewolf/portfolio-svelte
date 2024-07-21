@@ -42,14 +42,14 @@
         position: fixed;
         bottom: 0;
         z-index: 1000;
-        padding: 10px 0;
+        padding: 20px 0;
         text-align: center;
     }
 
     main {
         flex: 1;
-        padding-top: 60px; /* Adjust based on header height */
-        padding-bottom: 60px; /* Adjust based on footer height */
+        padding-top: 70px; /* Adjust based on header height */
+        padding-bottom: 70px; /* Adjust based on footer height */
         display: flex;
         justify-content: center;
         align-items: center;

@@ -4,7 +4,8 @@
 
 <main>
     <h1>About Me</h1>
-    <p>Here you can write about yourself, your background, skills, and experience.</p>
+    <p>Hello! I am Emil Ilieff, 19 years old with 5 years of experince in Full Stack Development. <br>
+        I work every day with a lot of technologies and available for hiring/volunteering in any project!  </p>
 </main>
 
 <style>
