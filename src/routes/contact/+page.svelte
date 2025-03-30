@@ -56,6 +56,9 @@ async function handleSubmit(event) {
     {#if $responseMessage}
     <p>{$responseMessage}</p>
     {/if}
+    <h4>Or you can send me an email
+    <p><a href="mailto:contact@ilieff.xyz">Here!</a></p>
+    </h4>
 </main>
 
 <style>

@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2024 Emil Ilieff</p>
+    <p>&copy; 2025 Emil Ilieff</p>
 </footer>
 
 <style>
