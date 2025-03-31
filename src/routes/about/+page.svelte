@@ -4,7 +4,7 @@
 
 <main>
     <h1>About Me</h1>
-    <p>Hello! I am Emil Ilieff, 19 years old with 5 years of experince in Full Stack Development. <br>
+    <p>Hello! I am Emil Ilieff, 20 years old with 5 years of experince in Full Stack Development. <br>
         I work every day with a lot of technologies and available for hiring/volunteering in any project!  </p>
 </main>
 
@@ -16,14 +16,14 @@
 
     h1 {
         font-size: 2.5rem;
-        color: #fff;
+        color: var(--text-color);
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         animation: fadeInUp 1s ease;
     }
 
     p {
         font-size: 1.2rem;
-        color: #ccc;
+        color: var(--text-color);
         animation: fadeInUp 1.5s ease;
     }
 

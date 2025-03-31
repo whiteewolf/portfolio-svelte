@@ -79,7 +79,7 @@
       padding: 20px;
       text-align: center;
       background: #121212; /* Dark background */
-      color: #e0e0e0; /* Light text color */
+      color: var(--text-color); /* Light text color */
       font-family: 'Roboto', sans-serif;
     }
   

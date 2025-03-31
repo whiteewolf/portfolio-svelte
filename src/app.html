@@ -6,16 +6,75 @@
         <link rel="icon" href="/images/me.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
         <style>
-            body {
-                font-family: 'Roboto', sans-serif;
-                background: linear-gradient(180deg, #132466, #b21f1f);
-                color: #fff;
-                display:flexbox;
-                justify-content:center;
-                align-items: center;    
-                min-height: 100vh;
-                text-align: center;
-            }
+         :root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #222;
+    --button-bg: #333;
+    --button-hover: #444;
+}
+
+/* Dark Blue Theme */
+[data-theme="dark-blue"] {
+    --bg-color: #0f172a;
+    --text-color: #e2e8f0;
+    --card-bg: #1e293b;
+    --button-bg: #334155;
+    --button-hover: #475569;
+}
+
+/* Dark Gray Theme */
+[data-theme="dark-gray"] {
+    --bg-color: #181818;
+    --text-color: #f0f0f0;
+    --card-bg: #222222;
+    --button-bg: #333333;
+    --button-hover: #444444;
+}
+
+/* Dark Red Theme */
+[data-theme="dark-red"] {
+    --bg-color: #2a0f0f;
+    --text-color: #f8e1e1;
+    --card-bg: #401b1b;
+    --button-bg: #5a2626;
+    --button-hover: #7a3a3a;
+}
+
+/* White Theme */
+[data-theme="white"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f8f8f8;
+    --button-bg: #dddddd;
+    --button-hover: #bbbbbb;
+}
+
+/* General Styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
             
             * {
                 box-sizing: border-box;

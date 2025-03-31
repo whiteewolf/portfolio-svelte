@@ -21,11 +21,11 @@
 
 <style>
     .card {
-        background: #333;
+        background: var(--card-bg);
         padding: 20px;
         border-radius: 10px;
         text-align: center;
-        color: #fff;
+        color: var(--text-color);
         transition: transform 0.5s ease;
     }
     .card:hover {
