@@ -5,6 +5,15 @@
 <main>
     <h1>Welcome to My Portfolio!</h1>
     <p>Explore my projects and get to know more about me.</p>
+        <button class="button">
+            <a href="/projects">Projects</a>
+        </button>
+        <button class="button">
+            <a href="/contact">Contact Me</a>
+        </button>
+        <!-- <button class="button">
+            <a href="/socials">Social Media</a>
+        </button> -->
     <!-- <button class="theme-button"> -->
     <!-- </button> -->
 </main>
@@ -24,16 +33,32 @@
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         animation: fadeInUp 2s ease;
     }
-    .links {
-        margin-left: 50px;
-        display: flex;
-        gap: 20px;
+    .button {
+        background: var(--button-bg);
+        color: var(--text-color);
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        /* transition: background 0.3s ease, transform 0.2s ease; */
+        animation: fadeInUp 3s ease;
+    }
+
+    .button:hover {
+        background: var(--button-hover);
+    }
+
+    .button:active {
+        transform: scale(0.95);
     }
     a {
         color: var(--text-color);
         text-decoration: none;
         font-size: 1.2rem;
         position: relative;
+        animation: fadeInUp 2s ease;
     }
 
     a::after {

@@ -4,7 +4,7 @@ export const projects = writable([
     {
         title: 'AntiRaid',
         description: 'With our services, you can easily protect your Discord Server in a matter of seconds!',
-        imageUrl: '/images/antiraid_new_banner.png',
+        imageUrl: '/images/AR_Banner.webp',
         Url: 'https://antiraid.xyz/',
         status: 'online',
         projectId: 1

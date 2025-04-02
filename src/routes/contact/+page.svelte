@@ -91,16 +91,16 @@ async function handleSubmit(event) {
     label {
         display: block;
         margin-bottom: 5px;
-        color: #ccc;
+        color: var(--text-color);
     }
 
     input, textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 3px solid var(--button-bg);
         border-radius: 4px;
         background: rgba(255, 255, 255, 0.1);
-        color: #fff;
+        color: var(--text-color);
         outline: none;
     }
 
@@ -113,7 +113,7 @@ async function handleSubmit(event) {
         border: none;
         border-radius: 4px;
         background: #66c0ff;
-        color: #fff;
+        color: var(--text-color);
         font-size: 1rem;
         cursor: pointer;
         transition: background 0.3s ease;
