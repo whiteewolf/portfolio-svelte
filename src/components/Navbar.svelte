@@ -24,7 +24,13 @@
         { name: "Dark Blue", value: "dark-blue", hoverColor: "#2c3e50" },
         { name: "Dark Gray", value: "dark-gray", hoverColor: "#555" },
         { name: "Dark Red", value: "dark-red", hoverColor: "#8b0000" },
-        { name: "White", value: "white", hoverColor: "#ddd" }
+        { name: "White", value: "white", hoverColor: "#ddd" },
+        { name: "Forest Green", value: "forest-green", hoverColor: "#2E8B57" },
+{ name: "Sunset Orange", value: "sunset-orange", hoverColor: "#FF4500" },
+{ name: "Ocean Breeze", value: "ocean-breeze", hoverColor: "#4682B4" },
+// { name: "Lavender Bliss", value: "lavender-bliss", hoverColor: "#9370DB" },
+{ name: "Earthy Tones", value: "earthy-tones", hoverColor: "#8B4513" }
+
     ];
 
     function switchTheme(newTheme) {
@@ -58,6 +64,7 @@
                         on:focus="{(e) => e.target.style.background = t.hoverColor}"
                         on:blur="{(e) => e.target.style.background = t.hoverColor}"
                     >
+                    <span class="theme-circle" style="background-color: {t.hoverColor};"></span>
                         {t.name}
                     </button>
                 {/each}
@@ -81,7 +88,6 @@
         height: 40px;
         margin-right: 10px;
     } */
-
     .navbar .brand-name {
         font-size: 1.5rem;
         color: #66c0ff; /* Futuristic blue */
@@ -152,6 +158,7 @@
         flex-direction: column;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         z-index: 100;
+        min-width: 170px; /* Adjusted width to fit names and circles */
     }
 
     .dropdown button {
@@ -162,11 +169,21 @@
         text-align: left;
         width: 100%;
         cursor: pointer;
+        display: flex; /* Ensures the circle and text are aligned */
+        align-items: center;
+        gap: 10px; /* Space between the circle and the text */
         transition: background 0.2s ease-in-out;
     }
 
     .dropdown button:hover {
         background: var(--button-hover);
+    }
+
+    .theme-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
     }
     .theme-button {
         background: var(--button-bg);
